@@ -4,7 +4,7 @@ import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
 
-@Entity(name = "POST_TABLE")
+@Entity(name = "TAG_TABLE")
 public class Tag {
 
     @Id

@@ -8,11 +8,11 @@ pipeline {
                 bat "mvn clean -f spring-data-jpa-crud"
             }
         }
-        /*stage('install') {
+        stage('install') {
             steps {
                 bat "mvn install -f spring-data-jpa-crud"
             }
-        }*/
+        }
         stage('test') {
             steps {
                 bat "mvn test -f spring-data-jpa-crud"

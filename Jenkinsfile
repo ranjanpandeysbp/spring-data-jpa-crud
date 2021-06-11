@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('git repo & clean') {
             steps {
-               bat "rmdir  /s /q spring-data-jpa-crud"
+               //bat "rmdir  /s /q spring-data-jpa-crud"
                 bat "git clone https://github.com/ranjanpandeysbp/spring-data-jpa-crud.git"
                 bat "mvn clean -f spring-data-jpa-crud"
             }

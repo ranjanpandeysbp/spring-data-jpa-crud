@@ -1,0 +1,29 @@
+<dependency>
+  <groupId>org.springframework.boot</groupId>
+  <artifactId>spring-boot-starter-jdbc</artifactId>
+</dependency>
+<dependency>
+  <groupId>org.postgresql</groupId>
+  <artifactId>postgresql</artifactId>
+</dependency>
+
+https://devcenter.heroku.com/articles/deploying-spring-boot-apps-to-heroku
+
+https://www.callicoder.com/deploy-host-spring-boot-apps-on-heroku/
+heroku deploy:jar target/heroku-demo-0.0.1-SNAPSHOT.jar --app <APP-NAME>
+
+https://dzone.com/articles/spring-boot-and-postgresql
+App
+springbootdeployment
+Host
+ec2-54-247-103-43.eu-west-1.compute.amazonaws.com
+Database
+dbfpqs8lm2gla2
+User
+xrfnszsexfvpwr
+Port
+5432
+Password
+ccbf43c1b20e8851f8c5e2dbc1301d5ede5648701c33f608b5b38e1645e7ac2a
+URI
+postgres://xrfnszsexfvpwr:ccbf43c1b20e8851f8c5e2dbc1301d5ede5648701c33f608b5b38e1645e7ac2a@ec2-54-247-103-43.eu-west-1.compute.amazonaws.com:5432/dbfpqs8l

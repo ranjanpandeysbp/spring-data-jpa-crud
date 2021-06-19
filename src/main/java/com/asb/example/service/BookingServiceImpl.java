@@ -14,6 +14,8 @@ import org.springframework.transaction.annotation.Isolation;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
+import java.util.Optional;
 import java.util.UUID;
 
 @Service
@@ -45,6 +47,21 @@ public class BookingServiceImpl implements BookingService{
         bookingResponse.setPnr(UUID.randomUUID().toString().split("-")[0]);
         bookingResponse.setTotalFare(passengerInfo.getFare());
 
+        return bookingResponse;
+    }
+
+    @Override
+    public BookingResponse getAllBookings(Long passengerId) {
+
+        BookingResponse bookingResponse = null;
+        Optional<PassengerInfo> optPssengerInfo = passengerInfoRepository.findById(passengerId);
+        if (optPssengerInfo.isPresent()){
+            PassengerInfo passengerInfo = optPssengerInfo.get();
+            PaymentInfo paymentInfo = paymentInfoRepository.findByPassengerId(passengerId);
+            bookingResponse.setTotalFare(paymentInfo.getTotalFare());
+            bookingResponse.setStatus("ACTIVE");
+            bookingResponse.setPassengerInfo(passengerInfo);
+        }
         return bookingResponse;
     }
 }

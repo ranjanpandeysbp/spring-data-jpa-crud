@@ -1,0 +1,35 @@
+POST
+https://springbootdeployment.herokuapp.com/api/v1/booking
+Request
+{
+    "paymentInfo": {
+    	"accountNo": "acnt-1212",
+    	"cardType": "CREDIT"
+    },
+    "passengerInfo":{
+    	"name": "John Doe",
+    	"email": "john@gmail.com",
+    	"source": "Delhi",
+    	"destination": "Goa",
+    	"pickupTime": "14.00",
+    	"arrivalTime": "16.00",
+    	"fare": 1500.00,
+    	"travelDate": "31-12-2021"
+    }
+}
+----------------------------------------------
+POST
+https://springbootdeployment.herokuapp.com/employee
+Request
+{
+    "employeeName": "John Doe",
+    "employeeCode": "CODE-1111",
+    "designation": "RRW"
+}
+---------------------------------------------
+GET
+https://springbootdeployment.herokuapp.com/employees
+---------------------------------------------
+GET
+https://springbootdeployment.herokuapp.com/employee/1
+---------------------------------------------

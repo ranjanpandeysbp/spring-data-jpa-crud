@@ -13,6 +13,8 @@ https://www.callicoder.com/deploy-host-spring-boot-apps-on-heroku/
 heroku deploy:jar target/heroku-demo-0.0.1-SNAPSHOT.jar --app <APP-NAME>
 
 https://dzone.com/articles/spring-boot-and-postgresql
+URL
+https://springbootdeployment.herokuapp.com/
 App
 springbootdeployment
 Host

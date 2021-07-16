@@ -7,6 +7,11 @@ pipeline {
                 bat "git clone https://github.com/ranjanpandeysbp/spring-data-jpa-crud.git"
             }
         }
+        stage('test') {
+            steps {
+                bat "mvn test -f spring-data-jpa-crud"
+            }
+        }
         stage('SonarQube Analysis') {
                     steps {
                         script{

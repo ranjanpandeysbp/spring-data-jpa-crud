@@ -12,6 +12,6 @@ public class EmployeeControllerTest {
     @Test
     @DisplayName("Adding two number")
     public void test_add(){
-        Assertions.assertEquals(1,1);
+        //Assertions.assertEquals(1,1);
     }
 }

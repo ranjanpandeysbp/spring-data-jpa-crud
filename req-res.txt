@@ -1,6 +1,6 @@
-jenkins-prod.affinity.org
-sonarqube-prod.affinity.org
-bitbucket-prod.affinity.org
+https://jenkins-prod.mycompany.com
+https://sonarqube-prod.mycompany.com
+https://bitbucket-prod.mycompany.com
 ---------------------DTAP urls-----------------------------------
 http://user-service-api-dev.mycompany.aws.com/login => http://location-service-api-dev.mycompany.aws.com/locations
 

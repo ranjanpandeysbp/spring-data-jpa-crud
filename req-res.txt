@@ -1,3 +1,19 @@
+http://user-service-api-dev.mycompany.aws.com/login => http://location-service-api-dev.mycompany.aws.com/locations
+
+http://user-service-api-test.mycompany.aws.com/login => http://location-service-api-test.mycompany.aws.com/locations
+
+
+http://user-service-api-acc.mycompany.aws.com/login => http://location-service-api-acc.mycompany.aws.com/locations
+
+http://user-service-api-prod.mycompany.aws.com/login => http://location-service-api-prod.mycompany.aws.com/locations
+
+========================================================
+
+http://location-service-api-dev.mycompany.aws.com/locations
+http://location-service-api-test.mycompany.aws.com/locations
+http://location-service-api-acc.mycompany.aws.com/locations
+http://location-service-api-prod.mycompany.aws.com/locations
+
 POST
 https://springbootdeployment.herokuapp.com/api/v1/booking
 Request

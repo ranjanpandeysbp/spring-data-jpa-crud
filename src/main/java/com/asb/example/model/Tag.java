@@ -14,7 +14,7 @@ public class Tag {
 
     @Column(name="TAG_NAME")
     private String name;
-
+//https://stackoverflow.com/questions/41407921/eliminate-circular-json-in-java-spring-many-to-many-relationship
     @ManyToMany(fetch = FetchType.LAZY,
             cascade = {
                     CascadeType.PERSIST,
